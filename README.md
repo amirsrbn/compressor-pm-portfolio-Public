@@ -71,13 +71,13 @@ An earlier research snapshot reported the following **simulation-based** metrics
 
 **Documented verification snapshots (not an all-time test total):**
 
-- **M5-017 documented light-suite snapshot (Project Completion Backlog, 2026-10):** **1,119 passed, 10 failed** with Octave installed (**1,042 passed** without Octave). The backlog says the 10 failures were also present in the comparison main baseline. This is a scoped regression-run result, **not** 1,119 all-time unique passing tests or a clean overall PASS. The same entry separately records **17 passing live-I/O gateway tests** and a **400-step HMI writer-equivalence check**.
+- **M5-017 documented light-suite snapshot (Project Completion Backlog, 2026-10):** **1,119 passed, 10 failed** in a recorded regression run that included MATLAB-compatible numerical checks. The backlog says the 10 failures were also present in the comparison main baseline. This is a scoped regression-run result, **not** 1,119 all-time unique passing tests or a clean overall PASS. The same entry separately records **17 passing live-I/O gateway tests** and a **400-step HMI writer-equivalence check**.
 
 - **2026-10-06, M5-013 isolated validation:** **229 Python tests passed, 0 failed, 0 skipped**, as recorded in the private `Docs/evidence/M5-013_validation_2026-10-06/results.json` report. That same report records separate MATLAB component checks, but explicitly states that overall M5-013 acceptance was **not met** at that date.
 - **MATLAB evidence registry:** the private `Docs/matlab_evidence_manifest.json` contains **28 records marked PASS** at the inspected revision. These are **evidence records/suites**, not 28 individually counted assertions and not a complete inventory of all project tests.
 - **2026-10-12, M5-018 selected integration run:** **117 passed and 1 failed** in the initial selected run; a subsequent **56-check targeted repair validation passed**. The report explicitly says broad end-to-end execution was interrupted and licensed Simulink acceptance was not executed for that scope.
 
-**No reliable project-wide total of unique passed tests is asserted.** The project includes multiple Python, MATLAB/Simulink, Octave, OPC-UA and integration test campaigns, some rerun across revisions; adding their individual PASS counts would double-count overlapping cases and obscure outstanding qualification gates.
+**No reliable project-wide total of unique passed tests is asserted.** The project includes multiple Python, MATLAB/Simulink, OPC-UA and integration test campaigns, some rerun across revisions; adding their individual PASS counts would double-count overlapping cases and obscure outstanding qualification gates.
 
 The three numerical ML figures above are retained for **historical context only**. They relate to earlier model, dataset, and test configurations; they are **not current acceptance results**, independently reproduced benchmarks, field-validation results, or guaranteed performance on real equipment. In particular, the surge comparison is specific to its original experimental baseline and must not be generalized to industrial performance.
 
