@@ -68,9 +68,10 @@ An earlier research snapshot reported the following **simulation-based** metrics
 | LSTM autoencoder anomaly detection | ROC-AUC | **0.861** |
 | LSTM remaining useful life prediction | Mean absolute error | **6.61 days** |
 | Physics-informed surge experiment | MAE improvement versus its physics-only comparison | **94.4%** |
-| Earlier Simulink acceptance-test snapshot | Tests reported passing | **35 / 35** |
 
-These figures are retained for **historical context only**. They relate to earlier model, dataset, and test configurations; they are **not current acceptance results**, independently reproduced benchmarks, field-validation results, or guaranteed performance on real equipment. In particular, the surge comparison is specific to its original experimental baseline and must not be generalized to industrial performance.
+**Testing progress:** The project owner reports approximately **2,000 successful test checks/executions across the wider private development program**. This is a cumulative, owner-reported figure, **not yet independently reconciled into a deduplicated, auditable test count**. It spans different development phases and test types and is **not** a claim of 2,000 distinct current-version tests or complete integrated-system qualification. The latest scoped evidence is tracked in the private project's test manifests and capability/evidence records.
+
+The three numerical ML figures above are retained for **historical context only**. They relate to earlier model, dataset, and test configurations; they are **not current acceptance results**, independently reproduced benchmarks, field-validation results, or guaranteed performance on real equipment. In particular, the surge comparison is specific to its original experimental baseline and must not be generalized to industrial performance.
 
 The broader private development subsequently adopted additional simulation/data revisions (including a documented **26,280-row, 119-column** physics-data artifact). That artifact and its associated verification evidence are **not included here**; therefore this README does not present it as a publicly reproducible result.
 
