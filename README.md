@@ -24,16 +24,23 @@ The examples here are **research prototypes and simulated-data experiments**, no
 
 ## What's actually available here
 
-### Python: modelling and predictive-maintenance experiments
+### Python: current public-safe demonstrations
+
+These are **newly authored, intentionally synthetic examples** of engineering-design patterns used in the broader project. They are not copies of the latest proprietary implementation, do not contain site/OEM parameters, and do not reproduce the complete private simulation.
 
 | Public file | Purpose |
 | --- | --- |
-| [`compressor_design_basis.py`](ml_pipeline/compressor_design_basis.py) | Parameters and assumptions used by the research examples |
-| [`data_generator.py`](ml_pipeline/data_generator.py) | Generation of synthetic equipment and fault-related data |
-| [`fleet_generator.py`](ml_pipeline/fleet_generator.py) | Virtual multi-unit dataset/scenario generation |
-| [`anomaly_detection.py`](ml_pipeline/anomaly_detection.py) | Anomaly-detection experiments |
-| [`rul_lstm.py`](ml_pipeline/rul_lstm.py) | Remaining useful life modelling experiment |
-| [`surge_model.py`](ml_pipeline/surge_model.py) | Physics-informed surge-related modelling experiment |
+| [`public_design_basis.py`](ml_pipeline/public_design_basis.py) | Validated parameter-data structure for illustrative LP/HP compressor stages; numerical inputs are fictional |
+| [`public_fleet_demo.py`](ml_pipeline/public_fleet_demo.py) | Reproducible, independently parameterized 15-unit synthetic fleet; no circular time shift or common base trace |
+
+Run locally with standard Python (no external dependencies):
+
+```bash
+python ml_pipeline/public_design_basis.py
+python ml_pipeline/public_fleet_demo.py
+```
+
+The older `data_generator.py`, `anomaly_detection.py`, `rul_lstm.py` and `surge_model.py` were identified as legacy research implementations in the main development repository. The previous public copies of `fleet_generator.py` and `compressor_design_basis.py` were also out of date. They have therefore been removed from the **current public portfolio** rather than represented as up-to-date production code.
 
 ### Engineering documentation — current public summaries
 
