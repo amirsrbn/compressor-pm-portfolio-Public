@@ -35,16 +35,14 @@ The examples here are **research prototypes and simulated-data experiments**, no
 | [`rul_lstm.py`](ml_pipeline/rul_lstm.py) | Remaining useful life modelling experiment |
 | [`surge_model.py`](ml_pipeline/surge_model.py) | Physics-informed surge-related modelling experiment |
 
-### Engineering documentation
+### Engineering documentation — current public summaries
 
 | Public document | Purpose |
 | --- | --- |
-| [`ARCHITECTURE.md`](simulink/ARCHITECTURE.md) | Architectural concepts and model separation |
-| [`SIMULINK_SIGNAL_ARCHITECTURE.md`](simulink/SIMULINK_SIGNAL_ARCHITECTURE.md) | Signal architecture and interface planning |
-| [`SIMULINK_ROADMAP.md`](simulink/SIMULINK_ROADMAP.md) | Historical development roadmap |
-| [`SIMULINK_BACKLOG.md`](simulink/SIMULINK_BACKLOG.md) | Historical work planning and acceptance targets |
+| [Engineering Architecture Overview](docs/ENGINEERING_ARCHITECTURE_OVERVIEW.md) | Current high-level system architecture, engineering scope and integration boundaries |
+| [Development Status & Verification](docs/DEVELOPMENT_STATUS_AND_VERIFICATION.md) | Dated verification snapshots, maturity limits and the current documentation-governance approach |
 
-**Important:** Planning documents describe intended scope at the time they were written; they should not be read as proof that every item has been implemented or accepted.
+The earlier `simulink/ARCHITECTURE.md`, `SIMULINK_SIGNAL_ARCHITECTURE.md`, `SIMULINK_ROADMAP.md`, and `SIMULINK_BACKLOG.md` were historical planning artifacts and **are not current project authorities**. Current detailed roadmap, backlog and evidence records are maintained in the private engineering repository; only public-safe summaries are published here.
 
 ## System concept
 
