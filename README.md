@@ -69,7 +69,13 @@ An earlier research snapshot reported the following **simulation-based** metrics
 | LSTM remaining useful life prediction | Mean absolute error | **6.61 days** |
 | Physics-informed surge experiment | MAE improvement versus its physics-only comparison | **94.4%** |
 
-**Testing progress:** The project owner reports approximately **2,000 successful test checks/executions across the wider private development program**. This is a cumulative, owner-reported figure, **not yet independently reconciled into a deduplicated, auditable test count**. It spans different development phases and test types and is **not** a claim of 2,000 distinct current-version tests or complete integrated-system qualification. The latest scoped evidence is tracked in the private project's test manifests and capability/evidence records.
+**Documented verification snapshots (not an all-time test total):**
+
+- **2026-10-06, M5-013 isolated validation:** **229 Python tests passed, 0 failed, 0 skipped**, as recorded in the private `Docs/evidence/M5-013_validation_2026-10-06/results.json` report. That same report records separate MATLAB component checks, but explicitly states that overall M5-013 acceptance was **not met** at that date.
+- **MATLAB evidence registry:** the private `Docs/matlab_evidence_manifest.json` contains **28 records marked PASS** at the inspected revision. These are **evidence records/suites**, not 28 individually counted assertions and not a complete inventory of all project tests.
+- **2026-10-12, M5-018 selected integration run:** **117 passed and 1 failed** in the initial selected run; a subsequent **56-check targeted repair validation passed**. The report explicitly says broad end-to-end execution was interrupted and licensed Simulink acceptance was not executed for that scope.
+
+**No reliable project-wide total of unique passed tests is asserted.** The project includes multiple Python, MATLAB/Simulink, Octave, OPC-UA and integration test campaigns, some rerun across revisions; adding their individual PASS counts would double-count overlapping cases and obscure outstanding qualification gates.
 
 The three numerical ML figures above are retained for **historical context only**. They relate to earlier model, dataset, and test configurations; they are **not current acceptance results**, independently reproduced benchmarks, field-validation results, or guaranteed performance on real equipment. In particular, the surge comparison is specific to its original experimental baseline and must not be generalized to industrial performance.
 
